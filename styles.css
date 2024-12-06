@@ -1,0 +1,716 @@
+/* ALEXANDRA BENKE */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of CSS */
+#skip {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+h4, p, q, small, nav, button, form, footer {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Molle", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header {
+    background: linear-gradient(#55BCD5, white);
+}
+
+#plan {
+    background-color: #F6D64A;
+}
+
+#plan section {
+    background-color: #55BCD5;
+}
+
+#about {
+    background-color: #499BD2;
+}
+
+footer {
+    background-color: #EAEAEA;
+}
+
+.required {
+    color: #9B26B0;
+}
+
+
+#toggle {
+    display: none;
+    
+}
+
+#toggle ~ label {
+    background-color: #F6D64A;
+    
+    
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    position: absolute;
+    top: 4.25em;
+    right: 0;
+    font-size: 1.3em;
+}
+
+#toggle:checked ~ ul {
+    max-height: 800px;
+}
+
+nav li {
+    display: block;
+    background-color: #55BCD5;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    font-weight: 900;
+    height: 80px;
+    transition: background-color .2s ease;
+}
+
+nav a:hover {
+    background-color: #499BD2;
+    
+}
+
+[for="toggle"] {
+    text-transform: uppercase;
+    display: flex;
+    height: 60px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    position: absolute;
+    top: 1.3em;
+    right: 0;
+    font-size: 1.3em;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+h1 {
+    font-size: 5em;
+    color: #222222;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+header p {
+    color: #222222;
+    font-size: 2em;
+    margin-left: 50px;
+    margin-right: 70px;
+    line-height: 1.5em;
+}
+
+header {
+    height: 400px;
+}
+
+nav label {
+    height: 200px;
+}
+
+#intro h2 {
+    font-size: 4em;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.7em;
+    margin-left: 50px;
+    color: #222222;
+    line-height: 1.5em;
+    margin-right: 50px;
+}
+
+#img-grid img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#intro picture {
+    display: flex;
+    width: 200%;
+    position: relative;
+    right: 60%;
+    margin-bottom: 50px;
+}
+
+
+#plan img {
+    height: 300px;
+    
+}
+
+#plan h3 {
+    font-size: 4em;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+#plan h4 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#plan section {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+#testimonials h3 {
+    font-size: 4em;
+    padding-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+#testimonials section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials img {
+    height: 350px;
+}
+
+#testimonials h4 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#testimonials p, #testimonials q {
+    color:#222222;
+    font-size: 1.8em;
+    line-height: 1.3em;
+}
+
+#testimonials q {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 4em;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    line-height: 1.2em;
+}
+
+#about p {
+    color:#222222;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+#about h4 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#about section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#about div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#contact h3 {
+    font-size: 4em;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    line-height: 1.2em;
+}
+
+.form-required {
+    color: #222222;
+    font-style: italic;
+    font-size: .5em;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contact label, #contact legend {
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#contact input, #travelTime, #destination {
+    display: block;
+    padding: 35px;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#travelTime, #destination, #mySubmit, #names input, #nums input {
+    width: 100%;
+    
+}
+
+#travelTime, #destination, #mySubmit, #names input, #phone, #email {
+    margin-bottom: 40px;
+}
+
+form [type="text"], form [type="tel"], form [type="email"], select {
+    border: 5px solid #9B26B0;
+}
+
+#selects {
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+#names, #nums {
+    margin-left: 60px;
+    margin-right: 120px;
+}
+
+#mySubmit {
+    color: white;
+    background-color: #9B26B0;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    margin-right: 60px;
+}
+
+#mySubmit:hover {
+    background-color: #222222;
+}
+
+input[type="radio"] {
+    width: 100px;
+    height: 100px;
+}
+
+#nums fieldset label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-transform: none;
+    font-weight: 100;
+    margin-left: -100px;
+}
+
+.radio-label {
+    margin-left: -70px;
+}
+
+
+
+footer p, footer a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/* Start of Medium Styles */
+
+@media screen and (min-width: 768px) {
+    
+    label[for="toggle"] {
+        display: none;
+    }
+    
+    nav{
+        
+    }
+
+    nav ul {
+        display: block;
+        max-height: 300px;
+        display: flex;
+        position: relative;
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav li {
+        width: 220px;
+        text-transform: uppercase;
+        
+    }
+
+    nav a {
+        background-color: white;
+        border: none;
+    }
+
+    nav a:hover {
+        background-color: #F6D64A;
+    }
+
+    header img {
+        width: 400px;
+        
+    }
+
+    header {
+        height: 450px;
+        padding-top: 50px;
+    }
+
+    #wrap {
+        display: flex;
+    }
+
+    header p {
+        width: 50%;
+        position: relative;
+        left: 400px;
+        bottom: 50px;
+    }
+
+    #intro h2 {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    #intro p {
+        margin-left: 50px;
+    }
+
+    #img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        place-items: center;
+    }
+
+    #img-grid .pic {
+        width: 92%;
+        
+    }
+
+    #img-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    #intro picture {
+        right: -50%;
+        width: 192%;
+    }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 950px;
+        place-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #plan div section {
+        width: 450px;
+        margin-bottom: 40px;
+    }
+
+    #plan h3 {
+        margin-left: 50px;
+    }
+
+    #plan img {
+        height: 250px;
+    }
+
+    #testimonials div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 20px;;
+    }
+
+    #testimonials h3 {
+        margin-left: 50px;
+    }
+
+    #about h3 {
+        margin-left: 50px;
+    }
+
+    #about div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #about h4 {
+        font-size: 2em;
+    }
+
+    #about p {
+        font-size: 1.7em;
+    }
+
+    #contact h3 {
+        margin-left: 50px;
+    }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 220px;
+    }
+
+    fieldset label {
+        
+        position: relative;
+        left: 75px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    fieldset .radio-label {
+        margin-left: 0px;
+        
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Start of Larg Styles */
+
+@media screen and (min-width: 1300px) {
+    header p, h1 {
+        margin-left: -40px;
+        
+    }
+
+    header p {
+        margin-top: -10px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+
+    nav li {
+        margin-left: 20px;
+        
+    }
+
+    nav a {
+        height: 60px;
+    }
+
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #plan div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    #plan div section {
+        width: 390px;
+        height: 350px;
+        
+        
+    }
+
+    #plan img {
+        height: 200px;
+    }
+
+    #plan h4 {
+        font-size: 2em;;
+    }
+
+    #testimonials div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #about section {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    fieldset {
+        margin-bottom: 17px;
+        grid-gap: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #names {
+        margin-left: 50px;
+    }
+
+    #nums {
+        margin-left: 0;
+    }
+
+    #selects {
+        margin-right: 50px;
+        margin-left: 0;
+    }
+
+    fieldset .radio-label {
+        margin-left: 20px;
+    }
+
+    #mySubmit {
+        
+        position: relative;
+        width: 50%;
+        float: right;
+        top: 35px;
+        margin-right: 0;
+    }
+
+    footer a:first-of-type {
+        position: relative;
+        left: 250px;
+    }
+}
